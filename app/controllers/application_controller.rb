@@ -9,7 +9,7 @@ class ApplicationController < Sinatra::Base
 
   get '/' do
     erb :index
-  end
+  end 
 
   post '/login' do
     @user = User.find_by(:username => params[:username])
@@ -36,4 +36,3 @@ class ApplicationController < Sinatra::Base
 
 
 end
-
